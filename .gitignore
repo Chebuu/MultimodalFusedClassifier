@@ -3,3 +3,13 @@
 **/sound
 **/video
 **/env
+**/audio_chunks
+**/audio_image_chunks
+**/env
+**/features
+**/final_dataset
+**/image_chunks
+**/imu_chunks
+**/old_data
+**/old_files
+**/saved_model

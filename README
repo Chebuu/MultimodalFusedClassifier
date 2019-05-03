@@ -1,0 +1,14 @@
+This folder contains all the python files for running training, prediction, and evaluation for the reclassification.
+
+To run it, you should probably intialize a virtual environment - I'll set up a packages file for easy install later
+
+Once the required packages are downloaded, you can just run "reclassify.py" to perform training, prediction, and evaluation all in one go.
+
+data_chunker and data_utils contain all the data manipulation and fileIO needed
+train_feature_extractors and test_feature_extractors trains each modality to classify the activity, but only saves output from an earlier layer
+train_and_predict_fusion_classifier trains the fusion network given the higher level features from before
+train_and_predict_feature_generators trains each sensor modality to reproduce the higher level features from the scores outputted from the fusion classifier.
+
+
+# TODO:
+-Still need to add more options to the reclassification (i.e. which activities to train/predict/evaluate on)
